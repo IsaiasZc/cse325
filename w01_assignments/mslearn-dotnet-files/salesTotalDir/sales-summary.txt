@@ -1,0 +1,14 @@
+Sales Summary
+------------------------------
+Total Sales: S/ 2,012.20
+
+Details:
+stores\201\sales.json: S/ 501.22
+stores\201\salestotals.json: S/ 1,501.22
+stores\202\sales.json: S/ 1,234.22
+stores\202\salestotals.json: S/ 101.22
+stores\203\sales.json: S/ 99.00
+stores\203\salestotals.json: S/ 154,401.22
+stores\204\sales.json: S/ 88.88
+stores\204\salestotals.json: S/ 13,501.22
+stores\sales.json: S/ 88.88
