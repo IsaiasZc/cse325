@@ -1,6 +1,10 @@
+using ConnectFour;
 using ConnectFour.Components;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Adding Game State
+builder.Services.AddSingleton<GameState>();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
@@ -15,12 +19,12 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
-app.UseStatusCodePagesWithReExecute("/not-found", createScopeForStatusCodePages: true);
+
 app.UseHttpsRedirection();
 
+app.UseStaticFiles();
 app.UseAntiforgery();
 
-app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
